@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
 }
 
 .visually-hidden {
@@ -28,11 +29,14 @@ body {
 .list {
   list-style: none;
 }
-.link {
+.link,
+.btn {
   text-decoration: none;
 }
 
-
+.btn {
+  cursor: pointer;
+}
 
 /* --------------HEADER-------------- */
 .header-logo,
@@ -67,7 +71,8 @@ body {
 .header-nav-link:hover,
 .header-nav-link:focus,
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.active {
   color: var(--accent-color);
 }
 
@@ -90,7 +95,6 @@ body {
   background-color: var(--accent-color);
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px; */
-
   font-family: inherit;
   font-weight: 700;
   line-height: 1.88;
@@ -159,6 +163,25 @@ letter-spacing: 0.03em;
 color: var(--secondary-text-color);
 }
 
+/* --------------PORTFOLIO--------------*/
+.portfolio-btn {
+  background-color: var(--secondary-back-color);
+  font-style: inherit;
+  font-weight: 500;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--title-color);
+}
+
+
 /* --------------FOOTER-------------- */
 
 .footer {
@@ -184,7 +207,9 @@ color: var(--title-color);
 }
 
 .footer-adress-link:hover,
-.footer-link:hover {
+.footer-link:hover,
+.footer-adress-link:focus,
+.footer-link:focus {
   color: var(--accent-color);
 }
 
