@@ -1,8 +1,10 @@
 :root {
   --primary-text-color:#212121;
   --secondary-text-color:#757575;
+  --third-text-color: rgba(255, 255, 255, 0.6);
   --title-color:#FFFFFF;
   --accent-color:#2196F3;
+  --second-accent-color: #188CE8;
   --logo-accent-color:#000;
   --back-color: #2F303A;
   --secondary-back-color: #F5F4FA;
@@ -29,6 +31,7 @@ body {
 .list {
   list-style: none;
 }
+
 .link,
 .btn {
   text-decoration: none;
@@ -102,6 +105,11 @@ body {
   letter-spacing: 0.06em;
 
   color: var(--title-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--second-accent-color);
 }
 
 /* --------------BENEFITS SECTION-------------- */
@@ -181,6 +189,21 @@ color: var(--secondary-text-color);
   color: var(--title-color);
 }
 
+.portfolio-subtitle {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-text-color);
+}
+
+.portfolio-desc {
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
 
 /* --------------FOOTER-------------- */
 
@@ -195,15 +218,15 @@ color: var(--secondary-text-color);
 .footer-adress-link,
 .footer-link {
   font-style: normal;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 
-color: var(--title-color);
+  color: var(--title-color);
 }
 
 .footer-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--third-text-color);
 }
 
 .footer-adress-link:hover,
@@ -215,13 +238,17 @@ color: var(--title-color);
 
 
 /* _________MAIN COLORS________
+
   --primary-text-color:#212121;
   --secondary-text-color:#757575;
+  --third-text-color: rgba(255, 255, 255, 0.6);
   --title-color:#FFFFFF;
   --accent-color:#2196F3;
+  --second-accent-color: #188CE8;
   --logo-accent-color:#000;
   --back-color: #2F303A;
   --secondary-back-color: #F5F4FA;
+
   */
 
 
