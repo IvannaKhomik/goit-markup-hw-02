@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--title-color);
   color: var(--primary-text-color);
 }
 
@@ -154,6 +155,11 @@ color: var(--primary-text-color);
 
   color: var(--primary-text-color);
 }
+
+.team-item {
+  background-color: var(--title-color);
+}
+
 .team-subtitle {
 font-weight: 500;
 line-height: 1.19;
@@ -174,6 +180,7 @@ color: var(--secondary-text-color);
 /* --------------PORTFOLIO--------------*/
 .portfolio-btn {
   background-color: var(--secondary-back-color);
+  font-family: inherit;
   font-style: inherit;
   font-weight: 500;
   line-height: 1.63;
